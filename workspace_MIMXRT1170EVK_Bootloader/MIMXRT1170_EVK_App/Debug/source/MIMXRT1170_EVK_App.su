@@ -1,0 +1,6 @@
+D:\develop\Data\git\RT117X_DebuggableBootloader\workspace_MIMXRT1170EVK_Bootloader\MIMXRT1170_EVK_App\CMSIS/core_cm7.h:1911:22:void __NVIC_EnableIRQ(IRQn_Type)	16	static
+D:\develop\Data\git\RT117X_DebuggableBootloader\workspace_MIMXRT1170EVK_Bootloader\MIMXRT1170_EVK_App\CMSIS/core_cm7.h:2041:22:void __NVIC_SetPriority(IRQn_Type, uint32_t)	16	static
+D:\develop\Data\git\RT117X_DebuggableBootloader\workspace_MIMXRT1170EVK_Bootloader\MIMXRT1170_EVK_App\CMSIS/core_cm7.h:2259:26:uint32_t SysTick_Config(uint32_t)	16	static
+../source/MIMXRT1170_EVK_App.cpp:45:17:void SysTick_Handler()	4	static
+../source/MIMXRT1170_EVK_App.cpp:53:17:void Systick_delay(uint32_t)	16	static
+../source/MIMXRT1170_EVK_App.cpp:66:16:int app_main()	16	static
