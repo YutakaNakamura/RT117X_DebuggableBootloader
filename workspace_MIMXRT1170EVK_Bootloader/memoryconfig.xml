@@ -1,0 +1,17 @@
+ <chip>
+  <memory id='Flash' type='Flash' is_ro='true' can_program='true'></memory>
+  <memory id='RAM' type='RAM'></memory>
+   <memoryInstance id='BOARD_FLASH_BOOT' derived_from='Flash' location='0x30000000' size='0x8000' driver='MIMXRT1170_SFDP_QSPI.cfx'  edited='true'  />
+   <memoryInstance id='BOARD_FLASH_APP' derived_from='Flash' location='0x30008000' size='0x1f800' driver='MIMXRT1170_SFDP_QSPI.cfx'  edited='true'  />
+   <memoryInstance id='BOARD_FLASH' derived_from='Flash' location='0x30027800' size='0x1fdc800' driver='MIMXRT1170_SFDP_QSPI.cfx'  edited='true'  />
+   <memoryInstance id='SRAM_DTC_cm7' derived_from='RAM' location='0x20000000' size='0x40000'   edited='true'  />
+   <memoryInstance id='SRAM_ITC_cm7_BOOT' derived_from='RAM' location='0x0' size='0x800'   edited='true'  />
+   <memoryInstance id='SRAM_ITC_cm7_APP' derived_from='RAM' location='0x800' size='0x1f800'   edited='true'  />
+   <memoryInstance id='SRAM_OC1' derived_from='RAM' location='0x20240000' size='0x80000'   edited='true'  />
+   <memoryInstance id='SRAM_OC2' derived_from='RAM' location='0x202c0000' size='0x80000'   edited='true'  />
+   <memoryInstance id='SRAM_OC_ECC1' derived_from='RAM' location='0x20340000' size='0x10000'   edited='true'  />
+   <memoryInstance id='SRAM_OC_ECC2' derived_from='RAM' location='0x20350000' size='0x10000'   edited='true'  />
+   <memoryInstance id='SRAM_OC_cm7' derived_from='RAM' location='0x20360000' size='0x20000'   edited='true'  />
+   <memoryInstance id='BOARD_SDRAM' derived_from='RAM' location='0x80000000' size='0x3000000'   edited='true'  />
+   <memoryInstance id='NCACHE_REGION' derived_from='RAM' location='0x83000000' size='0x1000000'   edited='true'  />
+ </chip>

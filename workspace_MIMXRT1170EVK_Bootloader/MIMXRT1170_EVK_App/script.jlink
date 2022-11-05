@@ -1,0 +1,7 @@
+ExitOnError 1
+r
+h
+loadfile "D:\develop\Data\git\PMSM_develop_2ndGen\MC_develop\workspace_MIMXRT1170EVK_Bootloader\MIMXRT1170_EVK_App\Debug\MIMXRT1170_EVK_App.hex"
+qc
+
+qc
