@@ -48,7 +48,7 @@
     <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.loadSymbols" value="true"/>
     <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.pcRegister" value=""/>
     <intAttribute key="org.eclipse.cdt.debug.gdbjtag.core.portNumber" value="2336"/>
-    <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.runCommands" value="add-symbol-file ../MIMXRT1170_EVK_Bootloader/Release/MIMXRT1170_EVK_Bootloader.axf 0x30002000&#13;&#10;b bootloader_main&#13;&#10;&#13;&#10;set *0xE000ED08 = 0x30000000&#13;&#10;set $sp = *(unsigned int*)0x30000000&#13;&#10;set $pc = *(unsigned int*)0x30000004"/>
+    <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.runCommands" value="add-symbol-file ../MIMXRT1170_EVK_Bootloader/Debug/MIMXRT1170_EVK_Bootloader.axf 0x30002000&#13;&#10;b bootloader_main&#13;&#10;&#13;&#10;set *0xE000ED08 = 0x30000000&#13;&#10;set $sp = *(unsigned int*)0x30000000&#13;&#10;set $pc = *(unsigned int*)0x30000004"/>
     <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.setPcRegister" value="false"/>
     <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.setResume" value="false"/>
     <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.setStopAt" value="true"/>
