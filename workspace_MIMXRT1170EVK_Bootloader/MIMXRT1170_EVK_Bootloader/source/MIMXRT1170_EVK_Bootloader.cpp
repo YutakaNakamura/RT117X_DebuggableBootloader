@@ -42,13 +42,13 @@
 /* TODO: insert other include files here. */
 
 /* Bootloader */
-#define RAMAPP_ADDRESS 0x800
+#define RAMAPP_ADDRESS 0x0
 #define RAMAPP_STACK   (RAMAPP_ADDRESS + 0)
 #define RAMAPP_RESET_HANDLER (RAMAPP_ADDRESS + 4)
 #define SET_VECTOR_TABLE 1
 
-#define DefROM_BIN_TOP    (0x30008000)
-#define DefDST_RAM_TOP    (0x800)
+#define DefROM_BIN_TOP    (0x30010000)
+#define DefDST_RAM_TOP    (0x0)
 
 typedef void(*pFunction)(void);
 pFunction JumpToApplication;
@@ -147,7 +147,7 @@ extern "C" int main(void) {
 	GPIO_PinWrite(GPIO3, 25U, 1U);
 	Systick_delay(125);
 
-	if( ROMtoRAM(0x30008000, 0x800, 0x1f800) ) {
+	if( ROMtoRAM(0x30010000, 0x0, 0x40000) ) {
 //        NVIC_DisableIRQ();
 //        ARM_MPU_Disable();
 //        SCB_DisableDCache();
