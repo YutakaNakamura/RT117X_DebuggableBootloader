@@ -20,9 +20,26 @@
 ![ImageInfo_Bootloader](image_markdown/ImageInfo_Bootloader.png)
 ![ImageInfo_App](image_markdown/ImageInfo_App.png)
 
+# 使い方
+1. MIMXRT1170_EVK_Bootloaderの書き込み
+1.1. ワークスペース上で、MIMXRT1170_EVK_Bootloaderを開き、ビルドします。
+1.2. デバッグを実行します。
+(MIMXRT1170_EVK_Bootloader JLink Debug を用意しています。)
+1.3. 実行すると何回か、250ms周期の比較的高速なLチカをして終了orリセットすると思います。
+2. MIMXRT1170_EVK_App
+2.1. ワークスペース上で、MIMXRT1170_EVK_Appを開き、ビルドします。
+2.2. デバッグを実行します。
+(MIMXRT1170_EVK_App JLink Debug を用意しています。)
+2.3. 実行すると、ブートローダのLチカをしてから、App側にジャンプして1s周期の遅いLチカを始めます。
+
 # ハマりポイント
 環境を作成するにあたり、いくつかの(本質ではない)障害がありました。
 ここに記録しておきます。
+
+## .cppでのmain関数マングリング
+mainの宣言がそのままだと、startup_mimxrt1176_cm7.cppでmain関数が見つからず、エラーとなります。
+extern "C" int main(void) {
+と記述して回避します。
 
 ## Flashの分割
 Bootloaderを利用するときには、通常Bootloaderを設置する領域(以下BOOTとします。)と、
